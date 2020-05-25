@@ -110,9 +110,12 @@ header h1{
 header h2{
 	color: #585A56;
 	position: relative;
-	top: 12vh;
-	font-size:3.5em;
-	margin-left:5em;
+	top: 17vh;
+	font-size:3em;
+	padding: 0;
+	margin-left:25vw;
+	margin-bottom: 0;
+	line-height: .5em;
 	}
 
 
