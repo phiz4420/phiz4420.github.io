@@ -231,7 +231,7 @@ h4{
 /*projects*/
 
 .projects{
-	height: 80vh;
+	height: 155vh;
 	text-align: center;
 	margin-bottom: 2em;
 }
@@ -241,21 +241,29 @@ h4{
 	font-size: 4em;
 }
 
+.projects h2{
+	background-color: #C2D3DA;
+
+}
+
 .projects h3{
 	margin: 10px;
 }
 
 .projects-flex{
 	display: flex;
-	width: 80%;
+	width: 85%;
 	justify-content: center;
 
 }
 
-#wisdom-owlicon, #zen-gardenicon, #brickhouseicon{
+#project1, #project2, #project3, #project4, #project5, #project6{
 	margin: 20px;
 	border-radius: 2%;
+	flex: 1;
 }
+
+
 
 .projects p{
 	margin: 30px;
