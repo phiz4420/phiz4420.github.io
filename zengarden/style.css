@@ -1,0 +1,547 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600&display=swap');
+/*rules for all*/
+body{
+   font-family: 'Dosis', sans-serif;
+   margin: 0;
+   color:whitesmoke;
+   overflow-x: hidden;
+  overflow-y:scroll;
+}
+
+ /* hover effect */
+
+
+.zen-resources a:link {
+  color: black;
+  text-decoration: none;
+}
+
+a:link {
+  font-weight: 600;
+  color: darkturquoise;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #EBC815;
+}
+a:hover {
+  color: salmon;
+ text-decoration: underline dotted 2px salmon;
+}
+a:active {
+  color: #edff00;
+  border: dotted 2px #edff00;
+} 
+
+  .sidebar li{
+        list-style: none;
+  }
+
+  .zen-resources li{
+    font-size: 16px;
+    background-color:  #edff00;
+    width: 120px;
+    margin: 10px ;
+    text-align: center;
+  }
+  
+/* footer*/
+  
+  footer a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border:  #edff00 solid 0px; 
+    text-indent:-10000px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: 60%;
+  }
+  
+  .zen-validate-html{
+    background-image: url(images/m_html5.png);
+  }
+  
+  .zen-validate-css{
+    background-image: url(images/m_css3.png);
+  }
+  
+  .zen-license{
+    background-image: url(images/m_cc.png);
+  }
+  
+  .zen-accessibility{
+    background-image: url(images/m_a11y.png);
+  }
+ 
+  .zen-github{
+    background-image: url(images/m_gh.png);
+  }
+  
+
+/* -----------CSS for mobile------------------*/
+
+@media screen and (max-width: 504px){
+  
+  body{
+    background-image: url(images/mobile_bkg.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-color: #003c6e;
+    margin: 0;
+    font-size:18px;}
+  
+  h1{
+    background-image: url(images/mobile_h1.png); 
+    margin-left: 20px;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    text-indent: -1000px;
+    overflow: hidden;
+    padding-bottom: 180px;
+  }
+  
+  h2{
+    float: left;
+    margin: 0;
+    text-indent: -1000px;
+    overflow: hidden;    
+  }
+  
+  .summary p{
+    font-size: 16px;
+    padding: 5px 30px;
+    margin: 0;
+  }
+  
+ #zen-supporting h3{
+     color: black; 
+     background-color: #edff00; 
+     width: 504px;
+     font-size: 24px;
+     text-align: center;
+     padding: 10px;
+      }  
+
+  #zen-preamble h3{
+     color: black; 
+     background-color: #edff00; 
+     width: 504px;
+     font-size: 24px;
+     text-align: center;
+     padding: 10px;
+      }  
+  
+ #zen-preamble{
+    padding-bottom: 20px;
+  }
+ #zen-preamble, #zen-supporting, #zen-participation, #zen-benefits, #zen-requirements  {
+    color: black;
+    background-color: whitesmoke;
+  }
+
+  p{
+    padding: 5px 60px 0 60px;
+    margin-bottom: 0
+  }
+ 
+/* footer*/
+  
+  footer{
+    padding: 60px;
+    position:relative;
+    top:470px;
+    text-align: center;
+  }
+  
+  /*grid*/
+  
+  .wrapper{
+    background-image: url(images/fish.png);
+    background-size: 95%;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "resources archives"
+      "resources selection"
+      "resources selection"
+      "footer footer";
+  }
+
+   .zen-resources{ 
+      grid-area: resources;
+      align-self: center;
+  }
+  
+   .design-archives{
+    grid-area: archives; 
+    place-self: start;
+  }
+  
+  .design-selection{
+    grid-area: selection;
+    place-self: start;
+  }
+
+  .wrapper h3{
+    text-indent: 75px;
+  }
+      
+  .design-archives li{
+      display: inline;
+      font-size: 16px;
+      padding: 10px 5px;
+      margin-right: 10px;
+      text-align: center;
+  }
+  
+ 
+  .design-selection li{
+      font-size: 16px;
+      margin-top: 0;
+      padding-top: 0;
+      padding-bottom:2px ;
+      text-align: center;
+  }
+
+   .zen-resources li{
+      border-radius: 20px;
+      padding: 15px 2px;
+  }
+  
+}
+
+
+/*--------CSS for tablet----------*/
+
+@media screen and (min-width: 505px) and (max-width:1365px) {
+  
+  body{
+    background-image: url(images/mobile_bkg.png);
+    background-repeat: no-repeat;
+
+    background-size: contain;
+    background-color: #003c6e;
+    margin: 0;
+    font-size:18px;}
+  
+  h1{
+    display: block;
+    background-image: url(images/mobile_h1.png); 
+    margin-left: 20px;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    text-indent: -1000px;
+    overflow: hidden;
+    width: 752px;
+    padding-bottom: 20vh;
+  }
+  
+  h2{
+    margin: 0;
+    text-indent: -1000px;
+    overflow: hidden;    
+  }
+  
+  .summary p{
+    font-size: 16px;
+    padding: 5px 30px;
+    margin: 0;
+  }
+  
+  .preamble{
+    width: 80vw;
+    margin-left: 10%;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    color: black;
+    background-color: whitesmoke;
+    border-radius: 30px;
+  }
+  
+  .preamble h3{
+     border-radius: 30px;
+     color: black; 
+     background-color: #edff00; 
+     font-size: 24px;
+     text-align: center;
+     padding: 10px;
+      }  
+  
+  .main  {
+   display: inline-flex;
+    justify-self: space-between;
+   flex-flow: row wrap;
+   color: black;
+  
+    margin: 40px;
+   border-radius: 30px;
+   padding-bottom:50px;
+  }
+   .main h3{
+     margin-top: 0;
+     border-radius: 30px;
+     color: black; 
+     background-color: #edff00; 
+     font-size: 24px;
+     text-align: center;
+     padding: 10px;
+      }  
+  .explanation, .participation, .benefits, .requirements{
+     background-color: whitesmoke;
+     width: 45%;
+     border-radius: 30px;
+     margin: 10px;
+    padding-bottom: 40px;
+  }
+
+  p{
+    padding: 5px 60px 0 60px;
+    margin-bottom: 0
+  }
+ 
+/* footer*/
+  
+  footer{
+    margin-top:2vh;
+    margin-left:35vw;
+    text-align: center;
+  }
+  
+  /*grid*/
+
+   
+  .wrapper{
+    background-image: url(images/fish.png);
+    height: 30vh;
+    background-size: contain;
+    background-position: center top;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: repeat(2, 1);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+   .zen-resources{
+      grid-area: 1 / 1 / 4 / 2;
+      align-self: center;
+  }
+  
+   .design-archives{
+    grid-area: 1 / 2 / 2 / 3; 
+    place-self: start;
+  }
+  
+  .design-selection{
+    grid-area: 2 / 2 / 4 / 3;
+    place-self: start;
+  }
+
+  .wrapper h3{
+    text-indent: 80px;
+  }
+      
+  .design-archives li{
+      display: inline;
+      font-size: 16px;
+      padding: 10px 5px;
+      margin-right: 10px;
+      text-align: center;
+  }
+  
+ 
+  .design-selection li{
+      font-size: 16px;
+      margin-top: 0;
+      padding-top: 0;
+      padding-bottom:2px ;
+      text-align: center;
+  }
+
+  .zen-resources li{
+    margin-left: 100px;
+      border-radius: 20px;
+      padding: 20px 5px;
+  }
+  
+}
+
+
+/*----------------CSS for desktop-----------------*/
+
+@media screen and (min-width: 1366px){ 
+ body{
+    font-size:16px;
+    margin-right: 20px;
+    background-image:
+    url(images/fish02.png), url(images/besktop_bkg.png); 
+    background-size:cover, cover;
+    background-position: center, center;
+    background-repeat: no-repeat no-repeat;
+    background-attachment: local, scroll;
+  }
+  
+  
+
+.page-wrapper{
+  display:grid;
+  grid-template-columns:45vw 50vw;
+  grid-template-rows:auto auto;
+  grid-gap: 2vw;
+  grid-template-areas: 
+    "left right"
+    "left right2";
+}
+
+
+  
+h1{
+  background-image: url(images/desktop_h1.png); 
+  width: 44vw;
+  height: 41vw;
+  margin-left: 20px;
+  background-repeat: no-repeat;
+  margin-top: 50px;
+  text-indent: -1000px;
+}
+  
+  h2{
+    text-indent: -1000px;
+    overflow:hidden;
+  }
+  
+  .summary{
+   margin-top: 42vw;
+   width: 45vw;
+    margin-left: -2vw;
+  }
+  
+  h1, .summary{
+    position: fixed;
+  }
+  
+  .zen-resources{
+    left: 0;
+    position: fixed;
+    padding-top: 80vh;
+    margin-left: -1vw;
+      }
+
+    footer{
+    position: fixed;
+    left:4vh;
+    top:90vh;
+  }
+  
+  .sidebar{
+    grid-area: right;
+  }
+  
+  .design-archives{
+    position: absolute;
+    top:5vh;
+    right:20vh;
+  }
+  
+  .design-selection{
+    position: absolute;
+    top:10vh;
+    right:15vw;
+  }
+  
+  .preamble{
+    position: absolute;
+    right: 2vw;
+    width: 45%;
+    top:35vh;
+  }
+  
+  .supporting{
+    padding-top: 68vh;
+    grid-area: right2;
+  }
+  
+ 
+     #zen-preamble h3{
+    text-indent: 1em;
+     color: black; 
+     background-color: #edff00; 
+     width: 250px;
+     font-size: 18px;
+     padding: .4em;
+     border-radius: 0px 15px 15px 0;
+      }  
+  
+    #zen-supporting h3{
+      text-indent: 1em;
+     color: black; 
+     background-color: #edff00; 
+     width: 200px;
+     font-size: 18px;
+     padding: .4em;
+     border-radius: 0px 15px 15px 0;
+    
+      }  
+  
+    #zen-preamble, #zen-explanation, #zen-participation, #zen-benefits, #zen-requirements  {
+    color: black;
+    background-color: whitesmoke;
+    border-radius: 50px;
+    padding: 28px 10px 10px 0px;
+    margin: 30px;
+    opacity: 0.9;
+  } 
+  
+ 
+  p{
+    padding: 0px 70px 10px;
+  }
+  
+ 
+  footer a{
+    margin: 20px;
+  }
+  
+  
+  .wrapper h3{
+    text-indent: -100000px;
+    overflow: hidden;
+  }
+    
+
+  .design-selection li{
+    font-size: 16px;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom:2px ;
+    text-align: center;
+  }
+  
+  
+   .design-archives li{
+      display: inline;
+      font-size: 16px;
+     background-color: whitesmoke;
+      border-radius: 20px;
+      padding: 10px 5px;
+      margin-right: 10px;
+      text-align: center;
+    
+  }
+  
+     .zen-resources li{
+      display: inline-block;
+      border-radius: 20px;
+      padding: 5px 2px;
+      margin: 2px;
+
+  } 
+  
+}
+
+
+

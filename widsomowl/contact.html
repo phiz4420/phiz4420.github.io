@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&display=swap"
+			rel="stylesheet">
+		<link
+			href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap"
+			rel="stylesheet">
+		<link rel="stylesheet" href="carousel.css" />
+		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+		<meta charset="UTF-8">
+		<title>Contact US</title>
+	</head>
+	<body>
+		<header>
+			<div class="flex-container">
+				<a href="index.html"><img class="logo" src="images/logo.png"
+						alt="WisdomOwlBooks-logo"></a>
+				<div class="searchbar-nav">
+					<form class="searchbar" method="get" action="/search" id="search">
+						<input type="text" name="searchbar" size="100" placeholder="Search...">
+					</form>
+					<nav class="nav-main">
+						<ul class="nav-primary">
+							<li><a href="about.html">About</a></li>
+							<li><a href="newbooks.html">New Books</a>
+								<ul class="nav-secondary">
+									<li><a href="new-arrivals.html">New Arrivals</a></li>
+									<li><a href="bestsellers.html">Bestsellers</a></li>
+									<li><a href="staff-picks.html">Staff Picks</a></li>
+									<li><a href="featured.html">Featured</a></li>
+								</ul>
+							</li>
+							<li><a href="usedbooks.html">Used Books</a></li>
+							<li><a href="events.html">Events</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="account-nav">
+					<span id="cart">Cart</span>
+					<span id="my-account">My Account</span>
+					<span id="greeting">Hello!</span>
+					<span id="account">Book-lover</span>
+					<span id="login">Login</span>
+				</div>
+			</div>
+			</header>
+
+			<div class="contact-flex-container">
+				<div class="store-hour">
+					<h2>Location</h2>
+					<span class="phone">000-000-0000</span>
+					<span class="street">0000 Any Street</span>
+					<span class="state">Any Town, OR, 00000</span>
+					<h2>Store Hours</h2>
+					<span class="hours">Monday 10am-6pm PT</span>
+					<span class="hours">Tuesday 10am-6pm PT</span>
+					<span class="hours">Wednesday Closed</span>
+					<span class="hours">Thursday 10am-6pm PT</span>
+					<span class="hours">Friday 10am-6pm PT</span>
+					<span class="hours">Weekend 11am-6pm PT</span>
+
+				</div>
+				<div class="contact-form">
+					<h1>Contact US</h1>
+					<span class="contact-question">Looking for a particular books?</span>
+					<span class="contact-question">Event booking inquries?</span>
+					<span class="contact-question">Or Just want to give us suggestions?</span>
+					<hr>
+					<form method="POST" action="index.html">
+						<label for="name">Name</label>
+						<input type="text" id="name" name="name" placeholder="Your name..">
+
+						<label for="address">Address(optional)</label>
+						<input type="text" id="address" name="address">
+
+						<span id="state">State</span>
+						<select name="state">
+						<option value="oregon">OR</option>
+						<option value="alaska">AK</option>
+						<option value="washington">WA</option>
+						<option value="california">CA</option>
+						</select><br>
+
+						<label for="phone">Phone</label>
+						<input type="tel" id="phone" name="phone"
+							pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="XXX-XXX-XXXX">
+
+						<label for="email">Email</label>
+						<input type="email" class="email" name="email">
+
+						<span id="subject">Subject</span>
+						<input type="radio" id="look-for-book" name="subject" value="look-for-book">
+						<label for="look-for-book">Look for a book</label><br>
+						<input type="radio" id="event-booking" name="subject" value="event-booking">
+						<label for="event-booking">Book for an event</label><br>
+						<input type="radio" id="other" name="subject" value="other">
+						<label for="other">Other</label>
+
+						<textarea rows="10" cols="50" name="comment" placeholder="Enter text here..."></textarea>
+						<input type="submit" class="submit" value="Submit">
+					</form>
+				</div>
+			</div>
+			<footer>
+				<div class="stay-connected">
+					<h3>Stay Connected</h3>
+					<p>Keep up on the best new books, timely features, and special offers.</p>
+					<form method="get">
+						<input type="email" id="email" name="email">
+						<button class="sign-up" type="button">Sign Up</button>
+					</form>
+					<img class="facebook" src="images/facebook.png" alt="facebook">
+					<img class="twitter" src="images/twitter.png" alt="twitter">
+					<img class="instagram" src="images/instagram.png" alt="instagram">
+				</div>
+
+				<div class="help">
+					<h3>Help</h3>
+					<ul>
+						<li>000-000-0000</li>
+						<li><a href="contact.html">Contact Us</a></li>
+						<li>Help Topics</li>
+						<li>Guarantee</li>
+						<li>Shipping</li>
+						<li>Terms</li>
+					</ul>
+				</div>
+
+				<div class="explore">
+					<h3>Explore</h3>
+					<ul>
+						<li><a href="about.html">About Us</a></li>
+						<li>Careers</li>
+						<li>Store Locations</li>
+						<li>Events</li>
+						<li>Gift Cards</li>
+						<li>Sitemap</li>
+					</ul>
+				</div>
+
+				<div class="account">
+					<h3>Account</h3>
+					<ul>
+						<li>My Account</li>
+						<li>Email Preferences</li>
+						<li>Used Book Alerts</li>
+						<li>Wish List</li>
+						<li>Partners</li>
+						<li>Security</li>
+					</ul>
+				</div>
+			<span class="copyright">Copyright © 2020 WisdomOwlBooks.com</span>
+		</footer>
+	</body>
+</html>

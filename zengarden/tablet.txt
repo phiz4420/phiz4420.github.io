@@ -1,0 +1,133 @@
+
+/*--------CSS for tablet----------*/
+
+@media screen and (min-width: 505px) and (max-width:1365px) {
+  
+  body{
+    background-image: url(images/mobile_bkg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center top;
+    background-color: #003c6e;
+    margin: 0;
+    font-size:18px;}
+  
+  h1{
+    display: block;
+    background-image: url(images/mobile_h1.png); 
+    margin-left: 20px;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    text-indent: -1000px;
+    overflow: hidden;
+    padding-bottom: 180px;
+  }
+  
+  h2{
+    float: left;
+    margin: 0;
+    text-indent: -1000px;
+    overflow: hidden;    
+  }
+  
+  .summary p{
+    font-size: 16px;
+    padding: 5px 30px;
+    margin: 0;
+  }
+  
+ #zen-supporting h3{
+     border-radius: 30px;
+     color: black; 
+     background-color: #edff00; 
+     font-size: 24px;
+     text-align: center;
+     padding: 10px;
+      }  
+
+  #zen-preamble h3{
+      border-radius: 30px;
+     color: black; 
+     background-color: #edff00; 
+     font-size: 24px;
+     text-align: center;
+     padding: 10px;
+      }  
+  
+ #zen-preamble{
+    padding-bottom: 20px;
+  }
+ #zen-preamble, #zen-supporting, #zen-participation, #zen-benefits, #zen-requirements  {
+   color: black;
+   background-color: whitesmoke;
+   border-radius: 30px;
+  }
+
+  p{
+    padding: 5px 60px 0 60px;
+    margin-bottom: 0
+  }
+ 
+/* footer*/
+  
+  footer{
+    padding: 60px;
+    position:relative;
+    top:490px;
+    text-align: center;
+  }
+  
+  /*grid*/
+  
+  .wrapper{
+    background-image: url(images/fish.png);
+    background-size: 60%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: repeat(2, 1);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+   .zen-resources{
+      grid-area: 1 / 1 / 4 / 2;
+      align-self: center;
+  }
+  
+   .design-archives{
+    grid-area: 1 / 2 / 2 / 3; 
+    place-self: start;
+  }
+  
+  .design-selection{
+    grid-area: 2 / 2 / 4 / 3;
+    place-self: start;
+  }
+
+  .wrapper h3{
+    text-indent: 75px;
+  }
+      
+  .design-archives li{
+      display: inline;
+      font-size: 16px;
+      padding: 10px 5px;
+      margin-right: 10px;
+      text-align: center;
+  }
+  
+ 
+  .design-selection li{
+      font-size: 16px;
+      margin-top: 0;
+      padding-top: 0;
+      padding-bottom:2px ;
+      text-align: center;
+  }
+
+  .zen-resources li{
+      border-radius: 20px;
+      padding: 15px 2px;
+  }
+  
+}

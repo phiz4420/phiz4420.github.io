@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.item1 { grid-area: header; }
+.item2 { grid-area: promotion; }
+.item3 { grid-area: sales; }
+.item4 { grid-area: info;}
+.item5 { grid-area: book1;}
+.item6 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    ' header header header '
+    ' promotion promotion sales'
+    ' info info info '
+    ' book1 book1 book1 '
+    ' footer footer footer ';
+  grid-gap: 10px;
+  background-color: #2196F3;
+}
+
+.grid-container > div {
+  background-color: #f6f6f6;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: DodgerBlue;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 80px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+</style>
+</head>
+<body>
+
+<h1>Grid Layout</h1>
+
+<p>This grid layout contains six columns and three rows:</p>
+
+<div class="grid-container">
+  <div class="item1">Header</div>
+  <div class="item2">Promotion</div> 
+  <div class="sales">Sales</div>  
+  <div class="info">info</div>
+  <div class="books">Book1
+    <div class="flex-container">
+    <div>1</div>
+  <div>2</div>
+    <div>3</div>  
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+  </div>
+  </div>
+  <div class="item6">Footer</div>
+</div>
+
+</body>
+</html>
