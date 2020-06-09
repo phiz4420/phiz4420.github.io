@@ -110,12 +110,9 @@ header h1{
 header h2{
 	color: #585A56;
 	position: relative;
-	top: 17vh;
-	font-size:3em;
-	padding: 0;
-	margin-left:25vw;
-	margin-bottom: 0;
-	line-height: .5em;
+	top: 12vh;
+	font-size:3.5em;
+	margin-left:5em;
 	}
 
 
@@ -234,7 +231,7 @@ h4{
 /*projects*/
 
 .projects{
-	height: 155vh;
+	height: 80vh;
 	text-align: center;
 	margin-bottom: 2em;
 }
@@ -244,29 +241,21 @@ h4{
 	font-size: 4em;
 }
 
-.projects h2{
-	background-color: #C2D3DA;
-
-}
-
 .projects h3{
 	margin: 10px;
 }
 
 .projects-flex{
 	display: flex;
-	width: 85%;
+	width: 80%;
 	justify-content: center;
 
 }
 
-#project1, #project2, #project3, #project4, #project5, #project6{
+#wisdom-owlicon, #zen-gardenicon, #brickhouseicon{
 	margin: 20px;
 	border-radius: 2%;
-	flex: 1;
 }
-
-
 
 .projects p{
 	margin: 30px;
